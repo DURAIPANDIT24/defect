@@ -1,0 +1,25 @@
+<mat-card class="mat-list-card center mat-elevation-z8">
+  <mat-card><mat-card-title>LIST OF ALL DEFECTS</mat-card-title></mat-card><br>
+
+    <mat-accordion multi="true" *ngIf="defects.length > 0">
+      <mat-expansion-panel *ngFor="let defect of defects">
+        <mat-expansion-panel-header>
+          <h3><b> Title :  </b>{{ defect.title }} </h3>
+        </mat-expansion-panel-header>
+
+        <h3><b> Description :  </b>{{ defect.content }} </h3>
+
+        <mat-action-row>
+          <button (click)="deleteDefect(defect?.title)" mat-raised-button color="warn">
+            DELETE
+          </button>
+        </mat-action-row>
+
+      </mat-expansion-panel>
+  </mat-accordion>
+<h1 class="info-text mat-body-1 text-center" *ngIf="defects?.length == 0">
+    -- NO DEFECTS ADDED YET !! --
+</h1>
+
+
+</mat-card>

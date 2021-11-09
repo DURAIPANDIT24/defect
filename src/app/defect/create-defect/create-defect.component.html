@@ -1,0 +1,42 @@
+<div class="box-width">
+  <mat-toolbar color="primary">
+      <span class="title-center">CREATE DEFECTS</span>
+  </mat-toolbar>
+
+  <div class="content">
+      <mat-card class="mat-elevation-z4">
+
+          <form class="formClass" (submit)="onAddDefect(postDefect)" #postDefect="ngForm">
+              <mat-card-content class="full-width">
+
+                  <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>Defect Title</mat-label>
+                      <input id="Title" matInput type="text" name="title" ngModel required minlength="3"
+                          placeholder="Enter here" #title="ngModel" />
+                      <mat-error *ngIf="title.invalid">Please Enter a Defect title.</mat-error>
+                  </mat-form-field> <br>
+
+                  <mat-divider inset></mat-divider> <br>
+
+                  <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>Defect Desciption</mat-label>
+                      <textarea matInput rows="4" name="description" ngModel required placeholder="Defect Description"
+                              #description="ngModel"></textarea>
+                      <mat-error *ngIf="description.invalid">Please Enter a Defect Description</mat-error>
+                  </mat-form-field>
+
+              </mat-card-content>
+
+              <mat-divider inset></mat-divider><br>
+
+              <mat-card-actions class="d-flex justify-content-evenly w-100 ml5">
+                  <button class="buttonStyle button-width" mat-raised-button color="primary" type="submit">Save Defect</button> &nbsp;&nbsp;
+                  <button class="buttonStyle button-width" mat-raised-button color="accent" routerLink="/listDefect">View Defect</button>&nbsp;
+                  <button class="buttonStyle button-width" mat-raised-button color="warn" type="reset">Reset</button>
+              </mat-card-actions>
+
+          </form>
+      </mat-card>
+  </div>
+</div>
+

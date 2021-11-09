@@ -1,0 +1,10 @@
+.text-center {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.mat-list-card {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 100px;
+}

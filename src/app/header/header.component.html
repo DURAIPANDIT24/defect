@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+  <button
+      class="home-button"
+      home-button
+      [routerLink]="'/'"
+      mat-icon-button class="example-icon"
+      aria-label="Example icon-button with menu icon">
+  <mat-icon class="mr20">home</mat-icon>
+</button>
+  <span class="defect"> Defect Tracking App</span>
+  <span class="space"></span>
+  <div class="align-self-center">
+
+      <a mat-raised-button routerLink = "createDefect">Create Defect</a>
+      <a mat-raised-button routerLink = "dashBoard" class="mr10 ml20">DashBoard</a>
+      <a mat-raised-button routerLink = "listDefect" class="mr10 ml20">List Defect</a>
+      <a mat-raised-button (click)="logout()" class="mr10 ml10">Logout</a>
+  </div>
+
+</mat-toolbar>
+
+
+<!-- <div>
+  <mat-toolbar color="primary">
+      <span class="defect"> Defect Trackin App </span>
+      <span class = "space"></span>
+      <a routerLink="createDefect" mat-raised-button color="primary" class="mr-4"> createDefect </a>
+      <a routerLink="listDefect" mat-raised-button color="primary" class="mr-4"> listDefect </a>
+  </mat-toolbar>
+</div> -->
