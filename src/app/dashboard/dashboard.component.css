@@ -1,0 +1,32 @@
+p {
+    font-family: Lato;
+  }
+  .example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+  }
+  .space {
+    flex: 1 1 auto;
+  }
+  .space {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mr20 {
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .ml20 {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .home-button:hover {
+    color: #fff;
+  }
+  table {
+    width: 100%;
+  }

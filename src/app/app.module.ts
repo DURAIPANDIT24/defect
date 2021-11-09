@@ -20,6 +20,10 @@ import {MatDividerModule} from '@angular/material/divider';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ChartsModule } from 'ng2-charts';
+import { MatTableModule } from '@angular/material/table'
+
+import { LoginPopupComponent } from './login-popup/login-popup.component';
+import { DeletePopupComponent } from './delete-popup/delete-popup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +32,9 @@ import { ChartsModule } from 'ng2-charts';
     LoginComponent,
     CreateDefectComponent,
     ListDefectComponent,
-    DashboardComponent
+    DashboardComponent,
+    LoginPopupComponent,
+    DeletePopupComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +51,7 @@ import { ChartsModule } from 'ng2-charts';
     MatDividerModule,
     ChartsModule,
     MatDialogModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

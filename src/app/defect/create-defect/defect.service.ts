@@ -18,4 +18,8 @@ export class DefectService {
   getDefects() {
     return this.defects;
   }
+  deleteDefect(title:any){
+    this.defects=this.defects.filter(element=>
+      element.title !== title)
+    }
 }

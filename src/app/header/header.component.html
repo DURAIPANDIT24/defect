@@ -2,7 +2,7 @@
   <button
       class="home-button"
       home-button
-      [routerLink]="'/'"
+      routerLink = "dashBoard"
       mat-icon-button class="example-icon"
       aria-label="Example icon-button with menu icon">
   <mat-icon class="mr20">home</mat-icon>
@@ -10,11 +10,11 @@
   <span class="defect"> Defect Tracking App</span>
   <span class="space"></span>
   <div class="align-self-center">
+    <a mat-raised-button routerLink = "dashBoard">DashBoard</a>
+      <a mat-raised-button routerLink = "createDefect"  class="mr10 ml20">Create Defect</a>
 
-      <a mat-raised-button routerLink = "createDefect">Create Defect</a>
-      <a mat-raised-button routerLink = "dashBoard" class="mr10 ml20">DashBoard</a>
       <a mat-raised-button routerLink = "listDefect" class="mr10 ml20">List Defect</a>
-      <a mat-raised-button (click)="logout()" class="mr10 ml10">Logout</a>
+      <a mat-raised-button (click)="logout()" class="mr10 ml20">Logout</a>
   </div>
 
 </mat-toolbar>
